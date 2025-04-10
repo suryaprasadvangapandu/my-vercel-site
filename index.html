@@ -46,6 +46,14 @@
             margin: 10px 0;
             padding: 5px 0;
         }
+
+        .status {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e8f5e9;
+            border-radius: 5px;
+            color: #2e7d32;
+        }
     </style>
 </head>
 
@@ -61,7 +69,16 @@
             <div class="step">4. 🚀 Auto Deploy: Site updates automatically</div>
             <div class="step">5. 🌐 Live: Changes are live instantly</div>
         </div>
+
+        <div class="status">
+            <p>🟢 Deployment Status: Live and Running</p>
+            <p>Last Updated: <span id="timestamp"></span></p>
+        </div>
     </div>
+
+    <script>
+        document.getElementById('timestamp').textContent = new Date().toLocaleString();
+    </script>
 </body>
 
 </html>
